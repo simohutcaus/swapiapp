@@ -1,0 +1,33 @@
+<ion-tabs>
+  <ion-tab-bar slot="bottom">
+ 
+    <ion-tab-button tab=films-view” href="/tabs/(films:films)">
+      <ion-icon name="film"></ion-icon>
+      <ion-label>Films</ion-label>
+    </ion-tab-button>
+ 
+    <ion-tab-button tab=people-view” href="/tabs/(people:people)">
+      <ion-icon name="people"></ion-icon>
+      <ion-label>People</ion-label>
+    </ion-tab-button>
+ 
+    <ion-tab-button tab=planets-view” href="/tabs/(planets:planets)">
+      <ion-icon name="planet"></ion-icon>
+      <ion-label>Planets</ion-label>
+    </ion-tab-button>
+ 
+  </ion-tab-bar>
+ 
+  <ion-tab tab=films-view”>
+    <ion-router-outlet name="films"></ion-router-outlet>
+  </ion-tab>
+ 
+  <ion-tab tab=people-view”>
+    <ion-router-outlet name="people"></ion-router-outlet>
+  </ion-tab>
+ 
+  <ion-tab tab=planets-view”>
+    <ion-router-outlet name="planets"></ion-router-outlet>
+  </ion-tab>
+ 
+</ion-tabs>
