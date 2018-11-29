@@ -9,7 +9,8 @@ import { TabsPageRoutingModule } from './tabs.router.module';
 import { FilmsPageModule } from '../films/films.module';
 import { PeoplePageModule } from '../people/people.module';
 import { PlanetsPageModule } from './../planets/planets.module';
- 
+import { PeopleDetailsPageModule } from './../people-details/people-details.module';
+import { PlanetDetailsPageModule } from './../planet-details/planet-details.module';
 import { FilmDetailsPageModule } from './../film-details/film-details.module';
  
 @NgModule({
@@ -21,7 +22,9 @@ import { FilmDetailsPageModule } from './../film-details/film-details.module';
     FilmsPageModule,
     PlanetsPageModule,
     PeoplePageModule,
-    FilmDetailsPageModule
+    FilmDetailsPageModule,
+    PeopleDetailsPageModule,
+    PlanetDetailsPageModule
   ],
   declarations: [TabsPage]
 })

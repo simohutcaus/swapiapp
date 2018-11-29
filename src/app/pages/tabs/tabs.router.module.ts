@@ -5,6 +5,8 @@ import { TabsPage } from './tabs.page';
 import { FilmsPage } from '../films/films.page';
 import { PeoplePage } from '../people/people.page';
 import { PlanetsPage } from './../planets/planets.page';
+import { PeopleDetailsPage } from '../people-details/people-details.page';
+import { PlanetDetailsPage } from '../planet-details/planet-details.page';
  
 const routes: Routes = [
   {
@@ -27,9 +29,19 @@ const routes: Routes = [
         component: PeoplePage
       },
       {
+        path: 'people/:id',
+        outlet: 'people',
+        component: PeopleDetailsPage
+      },
+      {
         path: 'planets',
         outlet: 'planets',
         component: PlanetsPage
+      },
+      {
+        path: 'planets/:id',
+        outlet: 'planets',
+        component: PlanetDetailsPage
       }
     ]
   },
